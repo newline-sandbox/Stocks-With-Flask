@@ -1,10 +1,12 @@
+{% from "macros.html" import stock_quote_link %}
+
 <h1>
   View your portfolio
 </h1>
 <ul>
   {% for ticker in ["FB", "AMZN", "AAPL", "GOOG"] %}
     <li>
-      <a href="{{url_for('view_stock', ticker=ticker)}}"> {{ticker}} </a>       
+      {{stock_quote_link(ticker)}}       
     </li>
   {% endfor %}
 </ul>
