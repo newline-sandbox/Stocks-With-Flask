@@ -1,0 +1,10 @@
+{% extends "base_layout.html" %}
+{% block title %} {{ticker}} {% endblock %}
+{% block content %}
+  <div>
+    {{ticker}} price is ${{stock_price}}
+  </div>
+{% endblock %}
+<h1 style="text-align: center;">
+  The price of {{ticker}} is {{stock_price}}
+</h1>
